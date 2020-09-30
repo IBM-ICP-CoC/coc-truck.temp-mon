@@ -1,5 +1,5 @@
 {
-    "org": "$HZN_ORG",
+    "org": "$HZN_ORG_ID",
     "label": "Truck Node Temp Service",
     "description": "A temp sensor collecting and reporting service.",
     "public": false,

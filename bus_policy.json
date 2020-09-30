@@ -3,7 +3,7 @@
     "description": "A super-simple service demo",
     "service": {
       "name": "coc-truck.temp-mon",
-      "org": "$HZN_ORG",
+      "org": "$HZN_ORG_ID",
       "arch": "amd64",
       "serviceVersions": [
         {
@@ -18,7 +18,7 @@
     ],
     "userInput": [
       {
-        "serviceOrgid": "$HZN_ORG",
+        "serviceOrgid": "$HZN_ORG_ID",
         "serviceUrl": "coc-truck.temp-mon",
         "serviceVersionRange": "[0.0.1,INFINITY)",
         "inputs": [
