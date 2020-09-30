@@ -15,3 +15,14 @@ Business Policy Docs:
 
 Service Docs: https://github.com/open-horizon/anax/blob/master/docs/service_def.md
 
+```
+docker login 
+
+docker build -t ibmicpcoc/coc.truck-node_amd64:1.0.1 .
+
+hzn exchange service publish -f svc_def.json
+
+hzn exchange business addpolicy --json-file=bus_policy.json coc.truck-node_1.0.2
+
+
+```
