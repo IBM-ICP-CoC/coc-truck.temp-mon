@@ -24,7 +24,7 @@
         "inputs": [
             {
                 "name": "HUB_URL",
-                "value": "http://orange.coc-ibm.com:5000/"
+                "value": "$TRUCK_HUB_URL"
             }
         ]
       }
