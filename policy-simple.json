@@ -1,0 +1,25 @@
+{
+    "properties": [
+        {
+            "name": "has-temperature-sensor",
+            "value": false
+        },
+        {
+            "name": "engine-telemetry-version",
+            "value": "1.9.0"
+        },
+        {
+            "name": "vehicle-type-code",
+            "value": "TR09"
+        },
+        {
+            "name": "openhorizon.allowPrivileged",
+            "value": true
+        },
+        {
+            "name": "openhorizon.example",
+            "value": "helloworld"
+        }
+    ],
+    "constraints": []
+}
