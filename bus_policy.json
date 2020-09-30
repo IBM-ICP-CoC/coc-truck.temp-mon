@@ -1,0 +1,33 @@
+{
+    "label": "Business policy for coc-truck.temp-mon",
+    "description": "A super-simple service demo",
+    "service": {
+      "name": "coc-truck.temp-mon",
+      "org": "$HZN_ORG",
+      "arch": "amd64",
+      "serviceVersions": [
+        {
+          "version": "1.0.2",
+          "priority":{}
+        }
+      ]
+    },
+    "properties": [],
+    "constraints": [
+          "tempsensor == true"
+    ],
+    "userInput": [
+      {
+        "serviceOrgid": "$HZN_ORG",
+        "serviceUrl": "coc-truck.temp-mon",
+        "serviceVersionRange": "[0.0.1,INFINITY)",
+        "inputs": [
+            {
+                "name": "HUB_URL",
+                "value": "http://orange.coc-ibm.com:5000/"
+            }
+        ]
+      }
+    ]
+  }
+  

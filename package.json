@@ -1,0 +1,13 @@
+{
+	"name": "coc-truck.temp-mon",
+	"version": "1.0.2",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"random": "^2.2.0",
+		"request-json": "0.6.5"
+	},
+	"repository": {}
+}
