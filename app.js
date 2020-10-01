@@ -7,8 +7,8 @@ const DEVICE = process.env.HZN_DEVICE_ID;
 const HUB_URL = process.env.HUB_URL;
 
 
-log(`Version: ${appVersion}`  );
-log(`Hub: ${process.env.HUB_URL}`);
+console.log(`Version: ${appVersion}`  );
+console.log(`Hub: ${process.env.HUB_URL}`);
 
 var client = request.createClient(HUB_URL);
  
