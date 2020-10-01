@@ -14,7 +14,7 @@
     },
     "properties": [],
     "constraints": [
-          "tempsensor == true"
+          "has-temperature-sensor == true"
     ],
     "userInput": [
       {
