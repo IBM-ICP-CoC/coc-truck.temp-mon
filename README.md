@@ -26,7 +26,7 @@ hzn exchange node updatepolicy -f policy-refrigerated.json dev2
 
 docker login 
 
-docker build -t ibmicpcoc/coc-truck.engine-mon_amd64:1.0.0 .
+docker build -t ibmicpcoc/coc-truck.temp-mon_amd64:1.0.2 .
 
 hzn exchange service publish -f svc_def.json
 
