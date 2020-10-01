@@ -13,7 +13,7 @@
     "deployment": {
         "services": {
             "coc.truck-node": {
-                "image": "ibmicpcoc/coc.truck-node_amd64:1.0.2",
+                "image": "ibmicpcoc/coc-truck.temp-mon_amd64:1.0.2",
 		        "ports": [  ]
             }
         }

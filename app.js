@@ -1,6 +1,5 @@
 const request = require('request-json');
 const random = require('random');
-const fs = require('fs');
 
 const appVersion = "1.0.2";
 
