@@ -138,11 +138,18 @@ docker logout
 
 ```
 
-4. Finally remove your docker base environment variable (you can leave the truck hub one, since the next person will also be using it).
+4. Remove your docker base environment variable (you can leave the truck hub one, since the next person will also be using it).
 
 ```shell
 
 unset DOCKER_REPOSITORY_BASE
+
+```
+
+5. Finally remove they signing keys you created with the hub.
+
+```shell
+rm -rf ~/.hzn/keys
 
 ```
 
