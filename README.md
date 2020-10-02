@@ -128,7 +128,7 @@ rm -rf coc-truck.temp-mon
 
 ```
 
-3. Next, remove the local docker image, and log out of docker.
+3. You'll need to wait a few minutes at this point, to allow the system to stop running the tmp application on this node.  Once it is removed you can remove the local docker image, and log out of docker.
 
 ```shell
 
