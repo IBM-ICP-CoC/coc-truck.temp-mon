@@ -9,6 +9,13 @@ To perform this step in the demo you will need to have a Docker Hub account to p
 
 To publish and deploy a this new service you must pull this git repository onto one of the nodes being mamanged by the EDS tool.  Open up a SSH session (via web terminal or local terminal app) to one of the managed nodes (i.e. `dev1`).
 
+### Start up the Truch Hub application
+
+1. Open up a new browser window using the URL of the Truck Hub application (see description above).  Resize the window so it always appears in a corner of the screen (so we can notice when the services start getting deployed to nodes).\
+\
+If there already is data there, then press the reset button.  If data continues to appear then this means that this demo was not cleaned up the last time it was done.  See the Clean Up section below to properly reset this demo.
+
+![Truck Hub Web](truck-hub-web.png)
 
 ### Inside a HZN node
 
