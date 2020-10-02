@@ -12,7 +12,12 @@
         }
       ]
     },
-    "properties": [],
+    "properties": [
+        {
+            "name": "coc-approved",
+            "value": true
+        }
+    ],
     "constraints": [
           "has-temperature-sensor == true"
     ],
