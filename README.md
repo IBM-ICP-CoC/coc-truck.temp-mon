@@ -60,7 +60,7 @@ nano svc_def.json
 6. In order to sign the container image you need to create/get a key from the echange hub.  The following command will generate a key signed by the given email address (but using the current amdin `hzn` credentials).
 
 ```shell
-hzn key create IBM jconallen@us.ibm.com
+hzn key create IBM <your email address>
 
 ```
 
@@ -102,7 +102,7 @@ hzn exchange business listpolicy
 
 12. You can now check the status of the nodes that are expected to be running this service (`dev6` - `dev10`).
 
-13. You should also minitor the Truck Hub web application for new temperature reportings.
+13. You should also monitor the Truck Hub web application for new temperature reportings.
 
 ### Clean Up
 
@@ -111,7 +111,6 @@ When you are finished the demo you should clean up what you did on the node.
 1. Remove the business policy first, then the service.
 
 ```shell
-
 hzn exchange business removepolicy -f bb8/coc-truck.temp-mon_1.0.2
 
 hzn exchange service remove -f bb8/coc-truck.temp-mon_1.0.2_amd64
@@ -121,7 +120,6 @@ hzn exchange service remove -f bb8/coc-truck.temp-mon_1.0.2_amd64
 2. Next, remove the git project from the node.
 
 ```shell
-
 cd ~
 
 rm -rf coc-truck.temp-mon
@@ -131,22 +129,21 @@ rm -rf coc-truck.temp-mon
 3. You'll need to wait a few minutes at this point, to allow the system to stop running the tmp application on this node.  Once it is removed you can remove the local docker image, and log out of docker.
 
 ```shell
-
 docker rmi $DOCKER_REPOSITORY_BASE/coc-truck.temp-mon_amd64:1.0.2
 
 docker logout
 
 ```
 
-4. Remove your docker base environment variable (you can leave the truck hub one, since the next person will also be using it).
+4. Remove the environment variables you created.
 
 ```shell
-
 unset DOCKER_REPOSITORY_BASE
+unset TRUCK_HUB_URL
 
 ```
 
-5. Finally remove they signing keys you created with the hub.
+5. Finally, remove they signing keys you created with the hub.
 
 ```shell
 rm -rf ~/.hzn/keys
