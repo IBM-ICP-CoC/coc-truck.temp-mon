@@ -111,7 +111,6 @@ When you are finished the demo you should clean up what you did on the node.
 1. Remove the business policy first, then the service.
 
 ```shell
-
 hzn exchange business removepolicy -f bb8/coc-truck.temp-mon_1.0.2
 
 hzn exchange service remove -f bb8/coc-truck.temp-mon_1.0.2_amd64
@@ -121,7 +120,6 @@ hzn exchange service remove -f bb8/coc-truck.temp-mon_1.0.2_amd64
 2. Next, remove the git project from the node.
 
 ```shell
-
 cd ~
 
 rm -rf coc-truck.temp-mon
@@ -131,22 +129,21 @@ rm -rf coc-truck.temp-mon
 3. You'll need to wait a few minutes at this point, to allow the system to stop running the tmp application on this node.  Once it is removed you can remove the local docker image, and log out of docker.
 
 ```shell
-
 docker rmi $DOCKER_REPOSITORY_BASE/coc-truck.temp-mon_amd64:1.0.2
 
 docker logout
 
 ```
 
-4. Remove your docker base environment variable (you can leave the truck hub one, since the next person will also be using it).
+4. Remove the environment variables you created.
 
 ```shell
-
 unset DOCKER_REPOSITORY_BASE
+unset TRUCK_HUB_URL
 
 ```
 
-5. Finally remove they signing keys you created with the hub.
+5. Finally, remove they signing keys you created with the hub.
 
 ```shell
 rm -rf ~/.hzn/keys
