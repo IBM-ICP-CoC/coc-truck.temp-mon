@@ -36,7 +36,7 @@ export TRUCK_HUB_URL=<TRUCK HUB URL>
 
 ```
 
-3. Log into docker (hub) with yoru credentials.  This is required to push the signed container image to the hub.
+3. Log into docker (hub) with your credentials.  This is required to push the signed container image to the hub.
 
 ```shell
 docker login 
@@ -69,7 +69,6 @@ hzn key create IBM <your email address>
 ```shell
 hzn exchange service publish -f svc_def.json
 
-
 ```
 
 8. You can verify the service was created with the UI, or with the following command.
@@ -79,30 +78,44 @@ hzn exchange service list
 
 ```
 
-9. With the service available we can publish a business policy that describes what nodes should run this service.  View this policy definition with the following command, and then exit the editor with Ctrl-x.
+9. Now we will update this service definition with a policy of its own.  Let's view these properties and constraints with the command.
+
+```shell
+nano svc_policy.json
+
+```
+
+10. Update the service with this policy using the command.
+
+```shell
+hzn exchange service addpolicy --json-file=svc_policy.json bb8/coc-truck.temp-mon_1.0.2_amd64
+
+```
+
+11. With the service available we can publish a business policy that describes what nodes should run this service.  View this policy definition with the following command, and then exit the editor with Ctrl-x.
 
 ```shell
 nano bus_policy.json
 
 ```
 
-10. Publish the policy with the following command.
+12. Publish the policy with the following command.
 
 ```shell
 hzn exchange business addpolicy --json-file=bus_policy.json coc-truck.temp-mon_1.0.2
 
 ```
 
-11. Verify the new business policy with UI, or with the following command.
+13. Verify the new business policy with UI, or with the following command.
 
 ```shell
 hzn exchange business listpolicy
 
 ```
 
-12. You can now check the status of the nodes that are expected to be running this service (`dev6` - `dev10`).
+14. You can now check the status of the nodes that are expected to be running this service (`dev6` - `dev10`).
 
-13. You should also monitor the Truck Hub web application for new temperature reportings.
+15. You should also monitor the Truck Hub web application for new temperature reportings.
 
 ### Clean Up
 
