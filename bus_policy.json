@@ -19,7 +19,8 @@
         }
     ],
     "constraints": [
-          "payload-type == refrigerated"
+          "payload-type == refrigerated",
+          "has-temperature-sensor == true" 
     ],
     "userInput": [
       {
