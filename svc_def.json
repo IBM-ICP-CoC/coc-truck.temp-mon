@@ -19,6 +19,6 @@
         }
     },
     "constraints": [
-        "has-gps == true"
+        "has-temperature-sensor == true"
     ]
 }
