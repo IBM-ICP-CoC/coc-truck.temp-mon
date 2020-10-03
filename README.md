@@ -102,7 +102,7 @@ hzn exchange business listpolicy
 
 12. You can now check the status of the nodes that are expected to be running this service (`dev6` - `dev10`).
 
-13. You should also minitor the Truck Hub web application for new temperature reportings.
+13. You should also monitor the Truck Hub web application for new temperature reportings.
 
 ### Clean Up
 
