@@ -60,7 +60,7 @@ nano svc_def.json
 6. In order to sign the container image you need to create/get a key from the echange hub.  The following command will generate a key signed by the given email address (but using the current amdin `hzn` credentials).
 
 ```shell
-hzn key create IBM jconallen@us.ibm.com
+hzn key create IBM <your email address>
 
 ```
 
